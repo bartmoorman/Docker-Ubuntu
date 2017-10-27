@@ -6,5 +6,5 @@ docker run \
 --init \
 --name ubuntu \
 --network backend \
-bmoorman/ubuntu
+bmoorman/ubuntu bash
 ```
