@@ -3,8 +3,8 @@ docker run \
 --rm \
 --interactive \
 --tty \
---init \
 --name ubuntu \
+--hostname ubuntu \
 --network backend \
 bmoorman/ubuntu bash
 ```
