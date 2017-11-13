@@ -7,10 +7,13 @@ ENV TZ="America/Denver" \
 
 ARG DEBIAN_FRONTEND="noninteractive"
 
-RUN apt-get update && \
-    apt-get dist-upgrade --yes && \
-    apt-get install --yes --no-install-recommends tzdata locales ca-certificates && \
-    locale-gen en_US.UTF-8 && \
-    apt-get autoremove --yes --purge && \
-    apt-get clean && \
-    rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN apt-get update \
+ && apt-get dist-upgrade --yes \
+ && apt-get install --yes --no-install-recommends \
+    ca-certificates \
+    locales \
+    tzdata \
+ && locale-gen en_US.UTF-8 \
+ && apt-get autoremove --yes --purge \
+ && apt-get clean \
+ && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/*
