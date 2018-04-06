@@ -1,10 +1,9 @@
-### Usage
+### Docker Run
 ```
 docker run \
---rm \
 --interactive \
 --tty \
 --name ubuntu \
---hostname ubuntu \
-bmoorman/ubuntu bash
+--rm \
+bmoorman/ubuntu:latest bash
 ```
