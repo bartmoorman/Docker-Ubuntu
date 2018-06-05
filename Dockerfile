@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:latest
 
 ENV TZ="America/Denver" \
     LANG="en_US.UTF-8" \
@@ -11,6 +11,7 @@ RUN apt-get update \
  && apt-get dist-upgrade --yes \
  && apt-get install --yes --no-install-recommends \
     ca-certificates \
+    gnupg \
     locales \
     tzdata \
  && locale-gen en_US.UTF-8 \
