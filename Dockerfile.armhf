@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM --platform=armhf ubuntu:xenial
 
 ENV TZ="America/Denver" \
     LANG="en_US.UTF-8" \
@@ -6,6 +6,8 @@ ENV TZ="America/Denver" \
     LANGUAGE="en_US.UTF-8"
 
 ARG DEBIAN_FRONTEND="noninteractive"
+
+COPY qemu-arm-static /usr/bin
 
 RUN apt-get update \
  && apt-get dist-upgrade --yes \
