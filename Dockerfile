@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:focal
 
 ENV TZ="America/Denver" \
     LANG="en_US.UTF-8" \
