@@ -5,5 +5,5 @@ docker run \
 --tty \
 --name ubuntu \
 --rm \
-bmoorman/ubuntu:armhf-latest bash
+bmoorman/ubuntu:latest bash
 ```
