@@ -1,9 +1,9 @@
 ### Docker Run
 ```
 docker run \
+--rm \
 --interactive \
 --tty \
 --name ubuntu \
---rm \
 bmoorman/ubuntu:latest bash
 ```
