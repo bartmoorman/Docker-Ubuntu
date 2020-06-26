@@ -1,11 +1,11 @@
 FROM ubuntu:focal
 
-ENV TZ="America/Denver" \
-    LANG="en_US.UTF-8" \
-    LC_ALL="en_US.UTF-8" \
-    LANGUAGE="en_US.UTF-8"
+ARG DEBIAN_FRONTEND=noninteractive
 
-ARG DEBIAN_FRONTEND="noninteractive"
+ENV TZ=America/Denver \
+    LANG=en_US.UTF-8 \
+    LC_ALL=en_US.UTF-8 \
+    LANGUAGE=en_US.UTF-8
 
 RUN apt-get update \
  && apt-get dist-upgrade --yes \
