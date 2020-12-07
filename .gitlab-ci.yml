@@ -1,4 +1,4 @@
-kimage: docker:stable
+image: docker:stable
 
 variables:
   DOCKER_TLS_CERTDIR: "/certs"
