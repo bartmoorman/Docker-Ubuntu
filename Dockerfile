@@ -11,6 +11,7 @@ RUN apt-get update \
  && apt-get dist-upgrade --yes \
  && apt-get install --yes --no-install-recommends \
     ca-certificates \
+    curl \
     gnupg \
     locales \
     tzdata \
