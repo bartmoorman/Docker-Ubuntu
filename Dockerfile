@@ -15,7 +15,6 @@ RUN apt-get update \
     gnupg \
     locales \
     tzdata \
- && update-ca-certificates --fresh \
  && locale-gen en_US.UTF-8 \
  && apt-get autoremove --yes --purge \
  && apt-get clean \
